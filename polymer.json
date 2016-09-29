@@ -2,10 +2,7 @@
   "entrypoint": "index.html",
   "shell": "src/app/asd-app.html",
   "fragments": [
-    "src/pages/asd-view1.html",
-    "src/pages/asd-view2.html",
-    "src/pages/asd-view3.html",
-    "src/pages/asd-view404.html"
+    "src/pages/home/asd-home.html"
   ],
   "sourceGlobs": [
    "src/**/*",
