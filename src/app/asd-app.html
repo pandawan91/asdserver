@@ -11,26 +11,12 @@
 <link rel="import" href="../../bower_components/iron-selector/iron-selector.html">
 <link rel="import" href="../../bower_components/paper-icon-button/paper-icon-button.html">
 <link rel="import" href="../../bower_components/lazy-loading/lazy-loading.html">
+<link rel="import" href="../shared-styles/shared-styles.html">
 <link rel="import" href="../icons/icons.html">
 
 <dom-module id="asd-app">
     <template>
-        <style>
-             :host {
-                --app-primary-color: #4285f4;
-                --app-secondary-color: black;
-                display: block;
-            }
-
-            app-header {
-                color: #fff;
-                background-color: var(--app-primary-color);
-            }
-
-            app-header paper-icon-button {
-                --paper-icon-button-ink-color: white;
-            }
-
+        <style include="shared-styles">
             .drawer-list {
                 margin: 0 20px;
             }
@@ -56,7 +42,8 @@
             data="{{routeData}}"
             tail="{{subroute}}"></app-route>
 
-        <app-drawer-layout fullbleed>
+        <app-drawer-layout fullbleed
+            responsive-width="1216px">
             <!-- Drawer content -->
             <app-drawer>
                 <app-toolbar>Menu</app-toolbar>

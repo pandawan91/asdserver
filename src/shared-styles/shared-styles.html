@@ -1,4 +1,6 @@
 <link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../bower_components/paper-styles/color.html">
+<link rel="import" href="../../bower_components/iron-flex-layout/iron-flex-layout.html">
 
 <!-- shared styles for all views -->
 <dom-module id="shared-styles">
@@ -21,6 +23,7 @@
                 color: #555;
                 border-radius: 50%;
                 background: #ddd;
+                background-color: var(--primary-color);
                 font-size: 30px;
                 line-height: 64px;
             }
@@ -29,6 +32,103 @@
                 margin: 16px 0;
                 color: #212121;
                 font-size: 22px;
+            }
+
+            app-header-layout {
+                width: 100%;
+            }
+
+            app-toolbar {
+                background-color: var(--dark-primary-color);
+            }
+
+            :host {
+                display: block;
+                padding: 10px;
+                width: 100%;
+
+                --primary-text-color: var(--light-theme-text-color);
+                --primary-background-color: var(--light-theme-background-color);
+                --secondary-text-color: var(--light-theme-secondary-color);
+                --disabled-text-color: var(--light-theme-disabled-color);
+                --divider-color: var(--light-theme-divider-color);
+                --error-color: var(--paper-deep-orange-a700);
+
+                /* Primary and accent colors. Also see color.html for more colors. */
+                --primary-color: var(--paper-blue-500);
+                --light-primary-color: var(--paper-blue-100);
+                --dark-primary-color: var(--paper-blue-700);
+                --accent-color: var(--paper-orange-a200);
+                --light-accent-color: var(--paper-orange-a100);
+                --dark-accent-color: var(--paper-orange-a400);
+
+                /* Material Design Light background theme */
+                --light-theme-background-color: #ffffff;
+                --light-theme-base-color: #000000;
+                --light-theme-text-color: var(--paper-grey-900);
+                --light-theme-secondary-color: #737373;  /* for secondary text and icons */
+                --light-theme-disabled-color: #9b9b9b;  /* disabled/hint text */
+                --light-theme-divider-color: #dbdbdb;
+
+                /* Material Design Dark background theme */
+                --dark-theme-background-color: var(--paper-grey-900);
+                --dark-theme-base-color: #ffffff;
+                --dark-theme-text-color: #ffffff;
+                --dark-theme-secondary-color: #bcbcbc;  /* for secondary text and icons */
+                --dark-theme-disabled-color: #646464;  /* disabled/hint text */
+                --dark-theme-divider-color: #3c3c3c;
+
+                /* Deprecated values because of their confusing names. */
+                --text-primary-color: var(--dark-theme-text-color);
+                --default-primary-color: var(--primary-color);
+            }
+
+            @media (max-width: 480px) {
+                .adaptive-container {
+                    width: 100%;
+                }
+            }
+
+            @media (min-width: 480px) {
+                .adaptive-container {
+                    width: 480px;
+                }
+            }
+
+            @media (min-width: 600px) {
+                .adaptive-container {
+                    width: 600px;
+                }
+            }
+
+            @media (min-width: 840px) {
+                .adaptive-container {
+                    width: 840px;
+                }
+            }
+
+            @media (min-width: 960px) {
+                .adaptive-container {
+                    width: 960px;
+                }
+            }
+
+            @media (min-width: 1280px) {
+                .adaptive-container {
+                    width: 1024px; /* 1280px - 256px drawer width */
+                }
+            }
+
+            @media (min-width: 1440px) {
+                .adaptive-container {
+                    width: 1184px; /* 1440px - 256px drawer width */
+                }
+            }
+
+            @media (min-width: 1600px) {
+                .adaptive-container {
+                    width: 1344px; /* 1600px - 256px drawer width */
+                }
             }
         </style>
     </template>
