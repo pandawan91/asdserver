@@ -82,22 +82,18 @@
                 <lazy-loading
                     selected="[[routeData.page]]"
                     attr-for-selected="name"
-                    fallback-selection="view404">
+                    fallback-selection="home">
                     <lazy-load
                         name="home"
                         url="../pages/home/asd-home.html"></lazy-load>
-                    <lazy-load
-                        name="view404"
-                        url="../pages/asd-view404.html"></lazy-load>
                 </lazy-loading>
 
                 <iron-pages
                     selected="[[routeData.page]]"
                     attr-for-selected="name"
-                    fallback-selection="view404"
+                    fallback-selection="home"
                     role="main">
                     <asd-home name="home"></asd-home>
-                    <asd-view404 name="view404"></asd-view404>
                 </iron-pages>
             </app-header-layout>
         </app-drawer-layout>
