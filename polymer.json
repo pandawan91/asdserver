@@ -1,11 +1,11 @@
 {
   "entrypoint": "index.html",
-  "shell": "src/my-app.html",
+  "shell": "src/app/asd-app.html",
   "fragments": [
-    "src/my-view1.html",
-    "src/my-view2.html",
-    "src/my-view3.html",
-    "src/my-view404.html"
+    "src/pages/asd-view1.html",
+    "src/pages/asd-view2.html",
+    "src/pages/asd-view3.html",
+    "src/pages/asd-view404.html"
   ],
   "sourceGlobs": [
    "src/**/*",
